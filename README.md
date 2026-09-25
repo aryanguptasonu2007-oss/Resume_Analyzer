@@ -50,9 +50,9 @@ It automatically extracts information from a resume, detects technical skills, e
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ System Architecture 
 
-```text
+```
                  ┌─────────────────────┐
                  │      User           │
                  │ Upload Resume +     │
@@ -95,3 +95,27 @@ It automatically extracts information from a resume, detects technical skills, e
                  │ Strengths           │
                  │ Improvements        │
                  └─────────────────────┘
+
+```
+### Project Structure
+```
+resumeiq/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── services/
+│
+├── backend/
+│   ├── main.py
+│   ├── resume_parser.py
+│   ├── skill_analyzer.py
+│   ├── analyzer.py
+│   ├── matcher.py
+│   ├── skills.json
+│   └── requirements.txt
+│
+├── public/
+├── package.json
+├── vite.config.js
+└── README.md
